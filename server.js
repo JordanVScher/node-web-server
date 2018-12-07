@@ -41,6 +41,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/cha', (req, res) => {
+  res.render('challenge.hbs', {
+    pageTitle: 'Challenge Page',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({ errorMessage: 'moving' });
 });
